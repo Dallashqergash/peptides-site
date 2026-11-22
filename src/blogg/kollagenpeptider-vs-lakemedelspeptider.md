@@ -5,7 +5,7 @@ date: 2026-10-30
 kategori: Kosttillskott
 bild: /bilder/artiklar/kollagen.jpg
 bildtext: "Illustration som ställer kollagenpeptider i en proteinbar mot en injicerad peptid med ett olikhetstecken mellan"
-bildkalla: "Samma ord, olika jobb: kollagenpeptider är mat, injicerade peptidläkemedel är signaler. Illustration: Peptides Explained."
+bildkalla: "Samma ord, olika jobb: kollagenpeptider är mat, injicerade peptidläkemedel är signaler. Illustration: Health Science Explained."
 ---
 
 "Innehåller peptider" har blivit ett säljargument på allt från proteinbarer till ansiktskrämer. Samtidigt är det samma ord som används om några av de mest avancerade läkemedel som finns. Det är lätt att tro att det handlar om samma sak. Det gör det inte.

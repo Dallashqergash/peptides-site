@@ -5,7 +5,7 @@ date: 2026-10-02
 kategori: Grunderna
 bild: /bilder/artiklar/peptid-protein.jpg
 bildtext: "Illustration som jämför en kort peptidkedja med ett stort, veckat protein"
-bildkalla: "En peptid är en kort kedja av aminosyror. Ett protein är en lång kedja som veckats till en tredimensionell form. Illustration: Peptides Explained."
+bildkalla: "En peptid är en kort kedja av aminosyror. Ett protein är en lång kedja som veckats till en tredimensionell form. Illustration: Health Science Explained."
 ---
 
 Ordet *peptid* dyker i dag upp överallt: på burkar med kollagenpulver, i reklam för hudkrämer, i nyheter om viktnedgångsläkemedel och i forum där människor diskuterar substanser som säljs "för forskningsändamål". Det är samma ord i alla fall, men det betyder väldigt olika saker. För att kunna skilja dem åt behöver man börja med vad en peptid faktiskt är.
@@ -32,7 +32,7 @@ Insulin, med sina 51 aminosyror fördelade på två kedjor, ligger precis på gr
 Kroppen tillverkar tusentals olika peptider. Många av dem fungerar som **signalmolekyler**: en cell släpper ut en peptid, den färdas en bit, och en annan cell tar emot den via en **receptor** på sin yta. Receptorn fungerar som ett lås, peptiden som en nyckel. När nyckeln passar sätts en process i gång inne i den mottagande cellen.
 
 ![Två celler där den ena släpper ut en peptid som tas emot av den andra](/bilder/artiklar/signal-celler.jpg)
-*En cell frisätter en peptid som tas emot av en receptor på en annan cell. Illustration: Peptides Explained.*
+*En cell frisätter en peptid som tas emot av en receptor på en annan cell. Illustration: Health Science Explained.*
 
 Några välkända exempel:
 

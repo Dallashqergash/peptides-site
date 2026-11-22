@@ -1,4 +1,4 @@
-# Peptides Explained – svensk blogg
+# Health Science Explained – svensk blogg om hälsovetenskap
 
 Statisk sajt byggd med [Eleventy](https://www.11ty.dev/). Publiceras automatiskt till GitHub Pages vid varje ändring på `main`.
 

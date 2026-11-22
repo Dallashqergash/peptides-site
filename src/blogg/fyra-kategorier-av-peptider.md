@@ -5,7 +5,7 @@ date: 2026-11-13
 kategori: Grunderna
 bild: /bilder/artiklar/kategorier.jpg
 bildtext: "Fyra kort med rubrikerna Metabolic, Tissue repair, Cognitive & sleep och Growth hormone"
-bildkalla: "De fyra kategorier som oftast diskuteras. Illustration: Peptides Explained."
+bildkalla: "De fyra kategorier som oftast diskuteras. Illustration: Health Science Explained."
 ---
 
 När man pratar om peptider i hälsosammanhang brukar de delas in efter vad de påstås göra. Indelningen är inte vetenskapligt officiell, men den är praktisk. Den viktigaste skillnaden går dock inte mellan kategorierna, utan **inom** dem: mellan peptider som är grundligt testade och godkända, och peptider som bara har studerats i laboratoriet.
@@ -53,7 +53,7 @@ Det finns två huvudtyper:
 ## Det som är gemensamt för alla fyra
 
 ![En peptid som binder till en receptor på en cellyta](/bilder/artiklar/receptor.jpg)
-*Oavsett kategori fungerar peptiderna på samma sätt: de är signaler som måste nå en receptor. Illustration: Peptides Explained.*
+*Oavsett kategori fungerar peptiderna på samma sätt: de är signaler som måste nå en receptor. Illustration: Health Science Explained.*
 
 Oavsett vilken kategori en peptid tillhör gäller samma grundprinciper:
 

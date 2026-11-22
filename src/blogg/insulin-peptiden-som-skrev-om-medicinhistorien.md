@@ -5,7 +5,7 @@ date: 2026-11-20
 kategori: Historia
 bild: /bilder/artiklar/aminosyror.jpg
 bildtext: "En lysande kedja av aminosyror mot en mörk bakgrund"
-bildkalla: "Insulin består av 51 aminosyror fördelade på två kedjor. Illustration: Peptides Explained."
+bildkalla: "Insulin består av 51 aminosyror fördelade på två kedjor. Illustration: Health Science Explained."
 ---
 
 I början av 1900-talet var typ 1-diabetes i praktiken en dödsdom. Barn som insjuknade fick en extremt sträng svältdiet som i bästa fall förlängde livet med några månader eller år. Sedan, på bara några månader 1921–1922, förändrades allt.

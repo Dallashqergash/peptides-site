@@ -5,7 +5,7 @@ date: 2026-11-06
 kategori: Forskning och säkerhet
 bild: /bilder/artiklar/flaskor.jpg
 bildtext: "Illustration av en omärkt glasflaska med texten Without independent testing"
-bildkalla: "Utan oberoende analys går det inte att veta vad en flaska innehåller. Illustration: Peptides Explained."
+bildkalla: "Utan oberoende analys går det inte att veta vad en flaska innehåller. Illustration: Health Science Explained."
 ---
 
 Den som rör sig i forum för träning, biohacking eller rehabilitering stöter förr eller senare på **BPC-157**. Peptiden beskrivs ofta som ett nästan mirakulöst medel för att läka senor, muskler och tarmar. Den säljs, tillsammans med andra peptider som TB-500, av nätbutiker som "forskningskemikalier". Men vad vet vi egentligen?

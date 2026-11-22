@@ -5,7 +5,7 @@ date: 2026-10-23
 kategori: GLP-1 och ämnesomsättning
 bild: /bilder/artiklar/semaglutid.jpg
 bildtext: "3D-illustration av en semaglutidmolekyl bredvid enzymet DPP-4"
-bildkalla: "Semaglutid följer samma väg genom kroppen som kroppens eget GLP-1, men bryts inte ned av DPP-4. Illustration: Peptides Explained."
+bildkalla: "Semaglutid följer samma väg genom kroppen som kroppens eget GLP-1, men bryts inte ned av DPP-4. Illustration: Health Science Explained."
 ---
 
 Få läkemedel har fått så mycket uppmärksamhet de senaste åren som GLP-1-läkemedlen. Namn som Ozempic, Wegovy och Mounjaro dyker upp i nyheter, på sociala medier och i fikarummet. Bakom dem finns en peptid som kroppen själv tillverkar – och decennier av forskning om hur man gör den hållbar.

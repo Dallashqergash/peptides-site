@@ -5,7 +5,7 @@ date: 2026-10-16
 kategori: Grunderna
 bild: /bilder/artiklar/svalja.jpg
 bildtext: "Illustration av en magsäck där peptider bryts ned till aminosyror som når blodet som näring"
-bildkalla: "En peptid som sväljs bryts ned till aminosyror. Det som når blodet är näring – inte en signal. Illustration: Peptides Explained."
+bildkalla: "En peptid som sväljs bryts ned till aminosyror. Det som når blodet är näring – inte en signal. Illustration: Health Science Explained."
 ---
 
 Den som har läst bipacksedeln till insulin, Ozempic eller nästan vilket annat peptidläkemedel som helst har märkt samma sak: det ska injiceras. Det är inte för att tillverkarna tycker om sprutor. Det beror på att matsmältningen gör exakt det den är till för.
@@ -30,7 +30,7 @@ Man kan sammanfatta svårigheten som två separata problem:
 - **Problem 2: att överleva i blodet.** Även en peptid som når blodet intakt bryts ofta ned av enzymer där på minuter. Det beskriver vi närmare i artikeln om [halveringstid](/blogg/halveringstid-varfor-de-flesta-peptider-forsvinner/).
 
 ![En injektionspenna vars väg går förbi magsäcken](/bilder/artiklar/injektion-tablett.jpg)
-*En injektion under huden hoppar över magsäcken helt och hållet. Illustration: Peptides Explained.*
+*En injektion under huden hoppar över magsäcken helt och hållet. Illustration: Health Science Explained.*
 
 ## Injektionen löser det första problemet
 

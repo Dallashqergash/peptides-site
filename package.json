@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
-  "description": "Svensk blogg om peptider",
+  "description": "Svensk blogg om hälsovetenskap",
   "scripts": {
     "start": "eleventy --serve --port=8080",
     "build": "eleventy"

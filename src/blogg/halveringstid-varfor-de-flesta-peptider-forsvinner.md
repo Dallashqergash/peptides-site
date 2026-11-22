@@ -6,7 +6,7 @@ kategori: Grunderna
 utvald: true
 bild: /bilder/artiklar/dpp4.jpg
 bildtext: "3D-illustration av enzymet DPP-4 som klyver en GLP-1-molekyl i ett blodkärl"
-bildkalla: "Enzymet DPP-4 (orange) klyver GLP-1 i blodbanan. Illustration: Peptides Explained, baserad på strukturer från Protein Data Bank."
+bildkalla: "Enzymet DPP-4 (orange) klyver GLP-1 i blodbanan. Illustration: Health Science Explained, baserad på strukturer från Protein Data Bank."
 ---
 
 Om du bara ska förstå en sak om peptider, så är det här den: **kroppen är byggd för att förstöra dem – snabbt.** Det är ingen brist i systemet. En signal måste kunna stängas av, annars blir den meningslös. Men det innebär att en peptid som ska fungera som läkemedel först måste lösa ett problem: hur överlever man i en miljö som är konstruerad för att göra sig av med en?
@@ -30,7 +30,7 @@ GLP-1 (*glukagonliknande peptid 1*) är ett hormon som tarmens celler frisätter
 Men kroppens eget GLP-1 har en halveringstid i blodet på **ungefär 1–2 minuter**. Huvudansvaret för det ligger hos enzymet **DPP-4** (dipeptidylpeptidas-4), som klipper av de två första aminosyrorna i kedjan. Den kortare molekylen som blir kvar binder knappt till receptorn längre, och signalen är i praktiken avstängd. Det som överlever filtreras sedan bort av njurarna.
 
 ![Diagram som jämför en kurva som faller snabbt med en kurva som sjunker långsamt över flera dagar](/bilder/artiklar/halveringstid.jpg)
-*Oskyddad peptid (röd) jämfört med stabiliserad peptid (gul): samma startmängd, helt olika livslängd. Illustration: Peptides Explained.*
+*Oskyddad peptid (röd) jämfört med stabiliserad peptid (gul): samma startmängd, helt olika livslängd. Illustration: Health Science Explained.*
 
 ## Tre sätt att överleva
 
@@ -45,7 +45,7 @@ DPP-4 känner igen en viss aminosyra på position två i kedjan. Byter man ut de
 Albumin är det vanligaste proteinet i blodet och lever själv i ungefär tre veckor. Det fungerar som ett transportfordon för bland annat fettsyror. Om man fäster en fettsyrekedja på peptiden kommer den att haka fast vid albumin. Bunden till det stora proteinet skyddas peptiden mot enzymer och är för stor för att filtreras bort av njurarna. Den släpps sedan gradvis och kan verka.
 
 ![En peptid med fettsyrekedja som binder till albuminproteinet](/bilder/artiklar/albumin.jpg)
-*Fettsyrekedjan (gul) gör att semaglutid binder till albumin och skyddas. Illustration: Peptides Explained.*
+*Fettsyrekedjan (gul) gör att semaglutid binder till albumin och skyddas. Illustration: Health Science Explained.*
 
 ### 3. Använd en molekyl som redan är tålig
 

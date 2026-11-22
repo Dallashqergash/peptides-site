@@ -5,7 +5,7 @@ date: 2026-11-18
 kategori: Forskning och säkerhet
 bild: /bilder/artiklar/losningar.jpg
 bildtext: "Illustration av olika sätt att skydda en peptid mot nedbrytning"
-bildkalla: "Det finns bara ett fåtal sätt att få en peptid att överleva i kroppen. Illustration: Peptides Explained."
+bildkalla: "Det finns bara ett fåtal sätt att få en peptid att överleva i kroppen. Illustration: Health Science Explained."
 ---
 
 Det kommer hela tiden nya peptider som påstås hjälpa mot allt från övervikt till ledvärk och åldrande. Du behöver inte vara biokemist för att bedöma dem. Med tre enkla frågor kommer du långt.
