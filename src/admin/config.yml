@@ -31,7 +31,7 @@ collections:
       - name: kategori
         label: Kategori
         widget: select
-        options: [Grunderna, "GLP-1 och ämnesomsättning", Kosttillskott, "Forskning och säkerhet", Historia]
+        options: [Grunderna, "GLP-1 och ämnesomsättning", Kosttillskott, "Forskning och säkerhet", Historia, "Sömn och återhämtning", Träning, "Kropp och hälsa"]
       - { name: bild, label: Omslagsbild, widget: image, required: false }
       - { name: bildtext, label: "Bildbeskrivning (för skärmläsare och Google)", widget: string, required: false }
       - { name: bildkalla, label: "Bildtext under bilden", widget: string, required: false }

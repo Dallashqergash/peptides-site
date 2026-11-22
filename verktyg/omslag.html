@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Mall för omslagsbilder (1600x900). Används av verktyg/omslag.ps1.
+     Parametrar i adressen: ?etikett=...&rubrik=...&tema=sol|molekyl|puls|sömn -->
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1600px; height: 900px; overflow: hidden; }
+  body {
+    background: radial-gradient(900px 600px at 78% 30%, #22306a 0%, transparent 65%),
+                radial-gradient(700px 500px at 10% 100%, #1a2350 0%, transparent 60%), #0c1226;
+    font-family: Inter, system-ui, sans-serif; color: #fff; position: relative;
+  }
+  .stjarnor span { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff; }
+  .text { position: absolute; left: 110px; top: 0; bottom: 0; width: 860px; display: flex; flex-direction: column; justify-content: center; }
+  .etikett { font-weight: 600; font-size: 26px; letter-spacing: .16em; text-transform: uppercase; color: #e6a443; margin-bottom: 28px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 84px; line-height: 1.06; margin: 0; letter-spacing: -.01em; }
+  .marke { position: absolute; left: 110px; bottom: 70px; display: flex; align-items: center; gap: 16px; font-family: Fraunces, Georgia, serif; font-size: 30px; color: rgba(255,255,255,.85); }
+  .marke svg { width: 44px; height: 44px; fill: #e6a443; }
+  .motiv { position: absolute; right: 70px; top: 50%; transform: translateY(-50%); width: 560px; height: 560px; }
+</style>
+</head>
+<body>
+<div class="stjarnor" id="st"></div>
+<div class="text">
+  <div class="etikett" id="etikett"></div>
+  <h1 id="rubrik"></h1>
+</div>
+<svg class="motiv" id="motiv" viewBox="0 0 560 560"></svg>
+<div class="marke">
+  <svg viewBox="0 0 32 32"><circle cx="7" cy="20" r="4"/><circle cx="14" cy="13" r="4"/><circle cx="21" cy="18" r="4"/><circle cx="27" cy="10" r="3.2"/></svg>
+  Health Science Explained
+</div>
+<script>
+  const p = new URLSearchParams(location.search);
+  document.getElementById('etikett').textContent = p.get('etikett') || '';
+  document.getElementById('rubrik').textContent = p.get('rubrik') || '';
+  // stjärnor (deterministiskt)
+  let s = 7; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  const st = document.getElementById('st');
+  for (let i = 0; i < 90; i++) { const d = document.createElement('span'); d.style.left = rnd() * 1600 + 'px'; d.style.top = rnd() * 900 + 'px'; d.style.opacity = .15 + rnd() * .5; st.appendChild(d); }
+  const motiv = {
+    sol: `<defs><radialGradient id="g"><stop offset="0" stop-color="#ffd27a"/><stop offset=".6" stop-color="#e6a443"/><stop offset="1" stop-color="#e6a443" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="280" cy="280" r="250" fill="url(#g)" opacity=".25"/><circle cx="280" cy="280" r="120" fill="#f2b85f"/>
+      ${Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;return `<line x1="${280+Math.cos(a)*150}" y1="${280+Math.sin(a)*150}" x2="${280+Math.cos(a)*200}" y2="${280+Math.sin(a)*200}" stroke="#f2b85f" stroke-width="10" stroke-linecap="round" opacity=".8"/>`}).join('')}`,
+    molekyl: (() => { const pts=[[120,330],[200,250],[290,300],[370,220],[450,270],[250,160],[330,400]]; const c=['#e2574c','#5b7cff','#e6a443','#3ccf9a','#ffffff','#5b7cff','#e6a443'];
+      return [[0,1],[1,2],[2,3],[3,4],[1,5],[2,6]].map(([a,b])=>`<line x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="rgba(255,255,255,.35)" stroke-width="10"/>`).join('') + pts.map((q,i)=>`<circle cx="${q[0]}" cy="${q[1]}" r="${i==4?28:40}" fill="${c[i]}"/>`).join(''); })(),
+    puls: `<path d="M20 300 H170 L210 200 L260 400 L310 140 L360 340 L390 300 H540" fill="none" stroke="#e2574c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="280" cy="280" r="250" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="4"/>`,
+    'sömn': `<path d="M360 110 A190 190 0 1 0 450 400 A150 150 0 1 1 360 110 Z" fill="#f2b85f"/>
+      <circle cx="150" cy="150" r="8" fill="#fff"/><circle cx="110" cy="260" r="5" fill="#fff"/><circle cx="200" cy="80" r="5" fill="#fff"/>`,
+  };
+  document.getElementById('motiv').innerHTML = motiv[p.get('tema')] || motiv.molekyl;
+</script>
+</body>
+</html>
