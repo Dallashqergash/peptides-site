@@ -1,0 +1,11 @@
+<article class="kort">
+  <a class="kort__lank" href="{{ p.url }}">
+    {% if p.data.bild %}<img class="kort__bild" src="{{ p.data.bild }}" alt="" loading="lazy" width="800" height="450">{% endif %}
+    <div class="kort__text">
+      {% if p.data.kategori %}<p class="etikett">{{ p.data.kategori }}</p>{% endif %}
+      <h3>{{ p.data.title }}</h3>
+      {% if p.data.description %}<p>{{ p.data.description }}</p>{% endif %}
+      <p class="meta"><time datetime="{{ p.date | isodatum }}">{{ p.date | datum }}</time> · {{ p.content | lastid }} min</p>
+    </div>
+  </a>
+</article>

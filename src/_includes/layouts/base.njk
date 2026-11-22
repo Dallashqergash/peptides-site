@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% set sidtitel = (title + " | " + site.namn) if title else (site.namn + " – " + site.slogan) %}
+  <title>{{ sidtitel }}</title>
+  <meta name="description" content="{{ description or site.beskrivning }}">
+  <link rel="canonical" href="{{ page.url | absolut(site.url) }}">
+  <meta property="og:site_name" content="{{ site.namn }}">
+  <meta property="og:title" content="{{ title or site.namn }}">
+  <meta property="og:description" content="{{ description or site.beskrivning }}">
+  <meta property="og:type" content="{{ 'article' if layout == 'layouts/inlagg.njk' else 'website' }}">
+  <meta property="og:url" content="{{ page.url | absolut(site.url) }}">
+  {% if bild %}<meta property="og:image" content="{{ bild | absolut(site.url) }}">{% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <a class="skip" href="#innehall">Hoppa till innehållet</a>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="logo" href="/">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="20" r="4"/><circle cx="14" cy="13" r="4"/><circle cx="21" cy="18" r="4"/><circle cx="27" cy="10" r="3.2"/></svg>
+        <span>{{ site.namn }}</span>
+      </a>
+      <button class="menuknapp" aria-expanded="false" aria-controls="meny" onclick="var m=document.getElementById('meny');var o=m.classList.toggle('oppen');this.setAttribute('aria-expanded',o)">Meny</button>
+      <nav id="meny" class="nav" aria-label="Huvudmeny">
+        <a href="/blogg/" {% if page.url.startsWith('/blogg') %}aria-current="page"{% endif %}>Artiklar</a>
+        <a href="/grunderna/" {% if page.url == '/grunderna/' %}aria-current="page"{% endif %}>Börja här</a>
+        <a href="/om/" {% if page.url == '/om/' %}aria-current="page"{% endif %}>Om oss</a>
+        <a href="/sa-arbetar-vi/" {% if page.url == '/sa-arbetar-vi/' %}aria-current="page"{% endif %}>Så arbetar vi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="innehall">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="logo logo--ljus" href="/">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="20" r="4"/><circle cx="14" cy="13" r="4"/><circle cx="21" cy="18" r="4"/><circle cx="27" cy="10" r="3.2"/></svg>
+          <span>{{ site.namn }}</span>
+        </a>
+        <p class="footer__slogan">{{ site.slogan }}</p>
+      </div>
+      <div>
+        <h2 class="footer__rubrik">Sajten</h2>
+        <ul>
+          <li><a href="/blogg/">Alla artiklar</a></li>
+          <li><a href="/grunderna/">Börja här</a></li>
+          <li><a href="/om/">Om oss</a></li>
+          <li><a href="/sa-arbetar-vi/">Så arbetar vi</a></li>
+          <li><a href="/integritet/">Integritet och cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__rubrik">Följ oss</h2>
+        <ul>
+          {% if site.youtube %}<li><a href="{{ site.youtube }}" rel="noopener">YouTube</a></li>{% endif %}
+          {% if site.instagram %}<li><a href="{{ site.instagram }}" rel="noopener">Instagram</a></li>{% endif %}
+          {% if site.tiktok %}<li><a href="{{ site.tiktok }}" rel="noopener">TikTok</a></li>{% endif %}
+          {% if site.kontaktEpost %}<li><a href="mailto:{{ site.kontaktEpost }}">E-post</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__friskrivning">
+      <p><strong>Viktigt:</strong> {{ site.ansvarsfriskrivning }}</p>
+      <p>© {{ bygg.ar }} {{ site.namn }}. Allt innehåll skyddas av upphovsrätt.</p>
+    </div>
+  </footer>
+</body>
+</html>

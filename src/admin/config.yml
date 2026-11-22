@@ -1,0 +1,104 @@
+# Inställningar för redigeringsverktyget (Sveltia CMS) på /admin
+# "repo" fylls i när sajten kopplats till GitHub.
+backend:
+  name: github
+  repo: Dallashqergash/peptides-site
+  branch: main
+
+locale: sv
+site_url: https://dallashqergash.github.io/peptides-site/
+display_url: https://dallashqergash.github.io/peptides-site/
+logo_url: ../favicon.svg
+
+media_folder: src/bilder/uppladdat
+public_folder: /bilder/uppladdat
+
+collections:
+  - name: blogg
+    label: Artiklar
+    label_singular: Artikel
+    folder: src/blogg
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} – {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: [date, title, kategori]
+    fields:
+      - { name: title, label: Rubrik, widget: string }
+      - { name: description, label: "Ingress (visas under rubriken och i sökresultat)", widget: text }
+      - { name: date, label: Publiceringsdatum, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - name: kategori
+        label: Kategori
+        widget: select
+        options: [Grunderna, "GLP-1 och ämnesomsättning", Kosttillskott, "Forskning och säkerhet", Historia]
+      - { name: bild, label: Omslagsbild, widget: image, required: false }
+      - { name: bildtext, label: "Bildbeskrivning (för skärmläsare och Google)", widget: string, required: false }
+      - { name: bildkalla, label: "Bildtext under bilden", widget: string, required: false }
+      - { name: forfattare, label: Författare, widget: string, default: Redaktionen, required: false }
+      - { name: uppdaterad, label: "Uppdaterad (fyll bara i vid ändring i sak)", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+      - { name: utvald, label: "Visa som utvald på startsidan", widget: boolean, default: false, required: false }
+      - { name: utkast, label: "Utkast (syns inte på sajten)", widget: boolean, default: false, required: false }
+      - { name: body, label: Text, widget: markdown }
+
+  - name: sidor
+    label: Sidor
+    files:
+      - name: om
+        label: Om oss
+        file: src/om.md
+        fields:
+          - { name: layout, widget: hidden, default: layouts/sida.njk }
+          - { name: permalink, widget: hidden, default: /om/ }
+          - { name: etikett, label: Etikett, widget: string, required: false }
+          - { name: title, label: Rubrik, widget: string }
+          - { name: description, label: Ingress, widget: text }
+          - { name: body, label: Text, widget: markdown }
+      - name: arbetar
+        label: Så arbetar vi
+        file: src/sa-arbetar-vi.md
+        fields:
+          - { name: layout, widget: hidden, default: layouts/sida.njk }
+          - { name: permalink, widget: hidden, default: /sa-arbetar-vi/ }
+          - { name: etikett, label: Etikett, widget: string, required: false }
+          - { name: title, label: Rubrik, widget: string }
+          - { name: description, label: Ingress, widget: text }
+          - { name: body, label: Text, widget: markdown }
+      - name: grunderna
+        label: Börja här
+        file: src/grunderna.md
+        fields:
+          - { name: layout, widget: hidden, default: layouts/sida.njk }
+          - { name: permalink, widget: hidden, default: /grunderna/ }
+          - { name: etikett, label: Etikett, widget: string, required: false }
+          - { name: title, label: Rubrik, widget: string }
+          - { name: description, label: Ingress, widget: text }
+          - { name: body, label: Text, widget: markdown }
+      - name: integritet
+        label: Integritet och cookies
+        file: src/integritet.md
+        fields:
+          - { name: layout, widget: hidden, default: layouts/sida.njk }
+          - { name: permalink, widget: hidden, default: /integritet/ }
+          - { name: etikett, label: Etikett, widget: string, required: false }
+          - { name: title, label: Rubrik, widget: string }
+          - { name: description, label: Ingress, widget: text }
+          - { name: body, label: Text, widget: markdown }
+
+  - name: installningar
+    label: Inställningar
+    files:
+      - name: site
+        label: Sajtens namn, länkar och friskrivning
+        file: src/_data/site.json
+        format: json
+        fields:
+          - { name: namn, label: Sajtens namn, widget: string }
+          - { name: slogan, label: Slogan, widget: string }
+          - { name: beskrivning, label: "Beskrivning (startsidan och Google)", widget: text }
+          - { name: url, label: "Sajtens adress (t.ex. https://dindomän.se)", widget: string }
+          - { name: youtube, label: YouTube-länk, widget: string, required: false }
+          - { name: instagram, label: Instagram-länk, widget: string, required: false }
+          - { name: tiktok, label: TikTok-länk, widget: string, required: false }
+          - { name: kontaktEpost, label: Kontakt-e-post, widget: string, required: false }
+          - { name: ansvarsfriskrivning, label: Ansvarsfriskrivning, widget: text }

@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Alla artiklar
+description: Alla artiklar om peptider – från grunderna till GLP-1, halveringstid och hur man granskar påståenden.
+permalink: /blogg/
+---
+<section class="sidhuvud">
+  <div class="wrap">
+    <p class="etikett">Artiklar</p>
+    <h1>Alla artiklar</h1>
+    <p class="ingress">{{ description }}</p>
+    <ul class="filter" aria-label="Kategorier">
+      <li><a href="/blogg/" aria-current="page">Alla</a></li>
+      {% for k in collections.kategorier %}<li><a href="/blogg/kategori/{{ k | slug }}/">{{ k }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="sektion">
+  <div class="wrap kortrutnat">
+    {% for p in collections.inlagg %}{% include "kort.njk" %}{% endfor %}
+  </div>
+</section>

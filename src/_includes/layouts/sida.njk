@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+<article class="artikel">
+  <header class="artikel__huvud wrap wrap--smal">
+    {% if etikett %}<p class="etikett">{{ etikett }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="ingress">{{ description }}</p>{% endif %}
+  </header>
+  <div class="prosa wrap wrap--smal">
+    {{ content | safe }}
+  </div>
+</article>

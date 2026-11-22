@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.kategorier
+  size: 1
+  alias: kat
+permalink: "/blogg/kategori/{{ kat | slug }}/"
+eleventyComputed:
+  title: "{{ kat }}"
+  description: "Artiklar om {{ kat | lower }}."
+---
+<section class="sidhuvud">
+  <div class="wrap">
+    <p class="etikett">Kategori</p>
+    <h1>{{ kat }}</h1>
+    <ul class="filter" aria-label="Kategorier">
+      <li><a href="/blogg/">Alla</a></li>
+      {% for k in collections.kategorier %}<li><a href="/blogg/kategori/{{ k | slug }}/" {% if k == kat %}aria-current="page"{% endif %}>{{ k }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="sektion">
+  <div class="wrap kortrutnat">
+    {% for p in collections.inlagg | filtrera("kategori", kat) %}{% include "kort.njk" %}{% endfor %}
+  </div>
+</section>

@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+---
+{% set utvald = collections.inlagg | filtrera("utvald", true) | first %}
+{% if not utvald %}{% set utvald = collections.inlagg | first %}{% endif %}
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="hero__etikett">Oberoende kunskap om peptider</p>
+      <h1>Vad peptider är, hur de fungerar – och varför de flesta aldrig når fram.</h1>
+      <p class="hero__ingress">{{ site.beskrivning }}</p>
+      <div class="hero__knappar">
+        <a class="knapp" href="/grunderna/">Börja med grunderna</a>
+        <a class="knapp knapp--sekundar" href="/blogg/">Alla artiklar</a>
+      </div>
+    </div>
+    <figure class="hero__bild">
+      <img src="/bilder/artiklar/receptor.jpg" alt="3D-illustration av en peptid som binder till en receptor på en cellyta" width="1600" height="900">
+    </figure>
+  </div>
+</section>
+
+{% if utvald %}
+<section class="sektion">
+  <div class="wrap">
+    <a class="utvald" href="{{ utvald.url }}">
+      {% if utvald.data.bild %}<img src="{{ utvald.data.bild }}" alt="" width="1600" height="900">{% endif %}
+      <div class="utvald__text">
+        <p class="etikett">Utvald artikel{% if utvald.data.kategori %} · {{ utvald.data.kategori }}{% endif %}</p>
+        <h2>{{ utvald.data.title }}</h2>
+        <p>{{ utvald.data.description }}</p>
+        <span class="lasmer">Läs artikeln →</span>
+      </div>
+    </a>
+  </div>
+</section>
+{% endif %}
+
+<section class="sektion">
+  <div class="wrap">
+    <div class="sektion__topp">
+      <h2 class="sektion__rubrik">Senaste artiklarna</h2>
+      <a href="/blogg/" class="lasmer">Visa alla →</a>
+    </div>
+    <div class="kortrutnat">
+      {% for p in collections.inlagg | utom(utvald.url) | forsta(6) %}{% include "kort.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sektion sektion--mork">
+  <div class="wrap">
+    <h2 class="sektion__rubrik">Tre frågor att ställa om vilken peptid som helst</h2>
+    <ol class="fragor">
+      <li><span>1</span><div><h3>Överlever den tillräckligt länge?</h3><p>Kroppens enzymer bryter ned de flesta peptider på minuter. Utan stabilitet hinner molekylen inte göra någonting.</p></div></li>
+      <li><span>2</span><div><h3>Skyddar administreringssättet den?</h3><p>Det som sväljs blir oftast mat. Vägen in i kroppen avgör om peptiden alls når blodet intakt.</p></div></li>
+      <li><span>3</span><div><h3>Finns det studier på människor?</h3><p>Lovande resultat i provrör och på råttor är en början – inte ett bevis för att något fungerar på dig.</p></div></li>
+    </ol>
+    <p><a class="knapp knapp--ljus" href="/blogg/tre-fragor-att-stalla-om-vilken-peptid-som-helst/">Läs hela guiden</a></p>
+  </div>
+</section>
+
+<section class="sektion">
+  <div class="wrap">
+    <h2 class="sektion__rubrik">Utforska efter ämne</h2>
+    <ul class="amnen">
+      {% for k in collections.kategorier %}
+      <li><a href="/blogg/kategori/{{ k | slug }}/">{{ k }} <span>{{ (collections.inlagg | filtrera("kategori", k)).length }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sektion sektion--tonad">
+  <div class="wrap principer">
+    <div>
+      <h2 class="sektion__rubrik">Så arbetar vi</h2>
+      <p>Vi skriver för den som vill förstå – inte för den som vill sälja. Varje artikel bygger på publicerad forskning och officiella källor, och vi skiljer tydligt på vad som är visat hos människor och vad som bara är lovande.</p>
+      <a class="lasmer" href="/sa-arbetar-vi/">Läs om våra principer →</a>
+    </div>
+    <ul class="principer__lista">
+      <li><strong>Källor i varje artikel.</strong> Studier och myndighetskällor listas så att du kan läsa vidare själv.</li>
+      <li><strong>Inga produkter, inga affiliatelänkar.</strong> Vi säljer ingenting och tjänar inget på vad du köper.</li>
+      <li><strong>Evidensnivå i klartext.</strong> Djurförsök, små studier och stora kliniska prövningar är inte samma sak.</li>
+    </ul>
+  </div>
+</section>

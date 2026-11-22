@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+---
+{% set lt = content | lastid %}
+<article class="artikel">
+  <header class="artikel__huvud wrap wrap--smal">
+    <nav class="brodsmulor" aria-label="Brödsmulor"><a href="/">Hem</a> <span>/</span> <a href="/blogg/">Artiklar</a>{% if kategori %} <span>/</span> <a href="/blogg/kategori/{{ kategori | slug }}/">{{ kategori }}</a>{% endif %}</nav>
+    {% if kategori %}<p class="etikett">{{ kategori }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="ingress">{{ description }}</p>{% endif %}
+    <p class="meta">
+      <span>Av {{ forfattare or "Redaktionen" }}</span>
+      <span aria-hidden="true">·</span>
+      <time datetime="{{ page.date | isodatum }}">{{ page.date | datum }}</time>
+      {% if uppdaterad %}<span aria-hidden="true">·</span><span>Uppdaterad {{ uppdaterad | datum }}</span>{% endif %}
+      <span aria-hidden="true">·</span>
+      <span>{{ lt }} min läsning</span>
+    </p>
+  </header>
+
+  {% if bild %}
+  <figure class="artikel__bild wrap wrap--bred">
+    <img src="{{ bild }}" alt="{{ bildtext or '' }}" width="1600" height="900">
+    {% if bildkalla %}<figcaption>{{ bildkalla }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="prosa wrap wrap--smal">
+    {{ content | safe }}
+  </div>
+
+  <aside class="wrap wrap--smal">
+    <div class="friskrivning">
+      <strong>Inte medicinsk rådgivning.</strong> {{ site.ansvarsfriskrivning }}
+    </div>
+  </aside>
+</article>
+
+{% set relaterade = collections.inlagg | utom(page.url) | filtrera("kategori", kategori) | forsta(3) %}
+{% if relaterade.length < 3 %}{% set relaterade = collections.inlagg | utom(page.url) | forsta(3) %}{% endif %}
+<section class="sektion sektion--tonad">
+  <div class="wrap">
+    <h2 class="sektion__rubrik">Läs vidare</h2>
+    <div class="kortrutnat">
+      {% for p in relaterade %}{% include "kort.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (description or "") | dump | safe }},
+  "datePublished": "{{ page.date | isodatum }}",
+  {% if uppdaterad %}"dateModified": "{{ uppdaterad | isodatum }}",{% endif %}
+  {% if bild %}"image": "{{ bild | absolut(site.url) }}",{% endif %}
+  "author": { "@type": "Organization", "name": {{ site.namn | dump | safe }} },
+  "publisher": { "@type": "Organization", "name": {{ site.namn | dump | safe }} },
+  "inLanguage": "sv"
+}
+</script>
