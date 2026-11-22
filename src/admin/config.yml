@@ -6,9 +6,9 @@ backend:
   branch: main
 
 locale: sv
-site_url: https://dallashqergash.github.io/peptides-site/
-display_url: https://dallashqergash.github.io/peptides-site/
-logo_url: ../favicon.svg
+site_url: https://healthscienceexplained.com/
+display_url: https://healthscienceexplained.com/
+logo_url: /favicon.svg
 
 media_folder: src/bilder/uppladdat
 public_folder: /bilder/uppladdat

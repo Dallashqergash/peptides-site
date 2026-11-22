@@ -22,8 +22,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-        env:
-          PATH_PREFIX: /peptides-site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
