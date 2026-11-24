@@ -3,7 +3,6 @@
 Baserad på svenska Google-sökförslag (november 2026). Den veckovisa rutinen väljer härifrån eller hittar nya sökord, och flyttar ämnet till "Publicerat".
 
 ## Kommande (förslag, ungefärlig prioritet)
-- Magnesium och sömn – glycinat, citrat, vilken form är bäst? (sökningar: magnesium glycinat, magnesium sömn, magnesium tillskott)
 - Kreatin för kvinnor – vad är det bra för och finns det biverkningar? (kreatin kvinnor, kreatin biverkningar, kreatin vad är det bra för)
 - Vad händer i kroppen när man slutar dricka alkohol – dag för dag (vad händer i kroppen när man slutar dricka alkohol dag för dag)
 - Melatonin – receptfritt, dosering och biverkningar (melatonin receptfritt, melatonin biverkningar, melatonin barn)
@@ -17,5 +16,6 @@ Baserad på svenska Google-sökförslag (november 2026). Den veckovisa rutinen v
 - Proteinbehov – hur mycket protein behöver man egentligen? (proteinrik mat, protein i ägg)
 
 ## Publicerat
+- 2026-11-24 – Magnesium och sömn: glycinat, citrat – vilken form är bäst, och fungerar det? (`src/blogg/magnesium-och-somn.md`)
 - 2026-11-22 – D-vitamin på vintern: vem behöver tillskott – och hur mycket? (`src/blogg/d-vitamin-pa-vintern.md`)
 - 2026-10-02 – 2026-11-20: grundserien om peptider (9 artiklar)
