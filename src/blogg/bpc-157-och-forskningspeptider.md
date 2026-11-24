@@ -1,18 +1,22 @@
 ---
-title: "BPC-157 och \"forskningspeptider\": vad säger forskningen egentligen?"
-description: "BPC-157, TB-500 och andra peptider säljs på nätet med löften om snabbare läkning. Här går vi igenom vad studierna faktiskt visar, vad märkningen \"ej för mänskligt bruk\" betyder och vilka risker som finns."
+title: 'BPC-157 och "forskningspeptider": vad säger forskningen egentligen?'
+description: BPC-157, TB-500 och andra peptider säljs på nätet med löften om snabbare läkning. Här går vi igenom vad studierna faktiskt visar, vad märkningen "ej för mänskligt bruk" betyder och vilka risker som finns.
 date: 2026-11-06
 kategori: Forskning och säkerhet
 bild: /bilder/artiklar/flaskor.jpg
-bildtext: "Illustration av en omärkt glasflaska med texten Without independent testing"
-bildkalla: "Utan oberoende analys går det inte att veta vad en flaska innehåller. Illustration: Health Science Explained."
+bildtext: Illustration av en omärkt glasflaska med texten Without independent testing
+bildkalla: 'Utan oberoende analys går det inte att veta vad en flaska innehåller. Illustration: Health Science Explained.'
+forfattare: Redaktionen
+uppdaterad: ''
+utvald: false
+utkast: false
 ---
 
 Den som rör sig i forum för träning, biohacking eller rehabilitering stöter förr eller senare på **BPC-157**. Peptiden beskrivs ofta som ett nästan mirakulöst medel för att läka senor, muskler och tarmar. Den säljs, tillsammans med andra peptider som TB-500, av nätbutiker som "forskningskemikalier". Men vad vet vi egentligen?
 
 ## Vad är BPC-157?
 
-BPC-157 står för *Body Protection Compound 157*. Det är en syntetisk peptid med 15 aminosyror vars sekvens kommer från ett protein som har hittats i magsaft. Den beskrevs första gången på 1990-talet av en forskargrupp i Kroatien, och samma grupp står för en stor del av forskningen sedan dess.
+[BPC-157](https://peptideslux.com/product/bpc-157-tb-500/) står för _Body Protection Compound 157_. Det är en syntetisk peptid med 15 aminosyror vars sekvens kommer från ett protein som har hittats i magsaft. Den beskrevs första gången på 1990-talet av en forskargrupp i Kroatien, och samma grupp står för en stor del av forskningen sedan dess.
 
 ## Vad visar studierna?
 
@@ -32,17 +36,17 @@ BPC-157 marknadsförs både som injektion och i form av kapslar. Förespråkare 
 
 ## Vad betyder "ej för mänskligt bruk"?
 
-Peptider som BPC-157, TB-500 och flera andra är **inte godkända som läkemedel** i Sverige, EU eller USA. Därför säljs de ofta med märkningen *"research chemical – not for human use"*. Märkningen är ett sätt för säljaren att undvika läkemedelslagstiftningen, men den innebär också att:
+Peptider som BPC-157, TB-500 och flera andra är **inte godkända som läkemedel** i Sverige, EU eller USA. Därför säljs de ofta med märkningen _"research chemical – not for human use"_. Märkningen är ett sätt för säljaren att undvika läkemedelslagstiftningen, men den innebär också att:
 
 - **Ingen myndighet kontrollerar innehållet.** Det finns inga krav på att flaskan innehåller rätt substans i rätt mängd.
 - **Renhet och sterilitet är okänd.** För en injektion är bakterier och endotoxiner en verklig risk.
 - **Analyscertifikat kan vara missvisande.** De tas ofta fram av säljaren själv eller av laboratorier som är svåra att kontrollera.
 
-Den amerikanska läkemedelsmyndigheten FDA har placerat BPC-157 bland de substanser som inte får användas vid apoteksberedning, med hänvisning till möjliga säkerhetsrisker och bristande data. Världsantidopningsbyrån WADA förbjuder BPC-157 inom idrotten under kategorin S0, *ej godkända substanser*.
+Den amerikanska läkemedelsmyndigheten FDA har placerat BPC-157 bland de substanser som inte får användas vid apoteksberedning, med hänvisning till möjliga säkerhetsrisker och bristande data. Världsantidopningsbyrån WADA förbjuder BPC-157 inom idrotten under kategorin S0, _ej godkända substanser_.
 
 ## Hur är det med TB-500 och andra?
 
-**TB-500** är ett syntetiskt fragment av proteinet *tymosin beta-4*. Precis som för BPC-157 kommer underlaget främst från djur- och cellstudier, och substansen är förbjuden enligt WADA.
+**TB-500** är ett syntetiskt fragment av proteinet _tymosin beta-4_. Precis som för BPC-157 kommer underlaget främst från djur- och cellstudier, och substansen är förbjuden enligt WADA.
 
 Samma mönster återkommer för många andra peptider som säljs på nätet: intressant grundforskning, få eller inga studier på människor, inget godkännande och okänd produktkvalitet.
 
@@ -63,8 +67,8 @@ Vi rekommenderar inte användning av icke godkända substanser. Om du överväge
 
 ## Källor
 
-1. Gwyer D, Wragg NM, Wilson SL. [Gastric pentadecapeptide body protection compound BPC 157 and its role in accelerating musculoskeletal soft tissue healing](https://pubmed.ncbi.nlm.nih.gov/?term=Gastric+pentadecapeptide+body+protection+compound+BPC+157+and+its+role+in+accelerating+musculoskeletal+soft+tissue+healing). *Cell and Tissue Research*. 2019;377(2):153–159.
-2. Rahman OF, et al. [Therapeutic peptides in orthopaedics: applications, challenges, and future directions](https://pubmed.ncbi.nlm.nih.gov/41490200/). *Journal of the American Academy of Orthopaedic Surgeons Global Research & Reviews*. 2026;10(1).
+1. Gwyer D, Wragg NM, Wilson SL. [Gastric pentadecapeptide body protection compound BPC 157 and its role in accelerating musculoskeletal soft tissue healing](https://pubmed.ncbi.nlm.nih.gov/?term=Gastric+pentadecapeptide+body+protection+compound+BPC+157+and+its+role+in+accelerating+musculoskeletal+soft+tissue+healing). _Cell and Tissue Research_. 2019;377(2):153–159.
+2. Rahman OF, et al. [Therapeutic peptides in orthopaedics: applications, challenges, and future directions](https://pubmed.ncbi.nlm.nih.gov/41490200/). _Journal of the American Academy of Orthopaedic Surgeons Global Research & Reviews_. 2026;10(1).
 3. World Anti-Doping Agency. [The Prohibited List](https://www.wada-ama.org/en/prohibited-list).
 4. U.S. Food and Drug Administration. [Certain bulk drug substances for use in compounding that may present significant safety risks](https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks).
 5. Läkemedelsverket. [Läkemedelsverket.se](https://www.lakemedelsverket.se) – information om att köpa läkemedel och om olagliga produkter.
